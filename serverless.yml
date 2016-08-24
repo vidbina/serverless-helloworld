@@ -33,6 +33,10 @@ defaults:
 functions:
   hello:
     handler: handler.hello
+    events:
+      - http:
+          path: hi
+          method: get
 
 #   you can add any of the following events
 #   events:
